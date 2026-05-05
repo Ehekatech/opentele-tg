@@ -58,11 +58,6 @@ A **Python Telegram API Library** for converting between **tdata** and **teletho
 
 ---
 
-# NOTICE
-Unfortunately, due to the lack of interest, I can no longer maintain this project and keep it up-to-date with the latest version of Telegram Desktop and Telethon.
-<br>
-If you have been using opentele for a while, I appreciate it, please consider contributing to the project, ask any questions in [Discussion](https://github.com/thedemons/opentele/discussions) and I'll try to help.
-
 ## Features
 - Convert [Telegram Desktop](https://github.com/telegramdesktop/tdesktop) **tdata** sessions to [telethon](https://github.com/LonamiWebs/Telethon) sessions and vice versa.
 - Use **telethon** with [official APIs](#authorization) to avoid bot detection.
