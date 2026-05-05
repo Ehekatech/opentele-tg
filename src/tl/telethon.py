@@ -624,7 +624,7 @@ class TelegramClient(telethon.TelegramClient, BaseObject):
 
                 # for the above reason, we should check if we're already authorized
                 if isinstance(qr_login._resp, types.auth.LoginTokenSuccess):
-                    newClient._on_login(qr_login._resp.authorization.user)
+                    await newClient._on_login(qr_login._resp.authorization.user)
                     break
 
                 # calculate when will the qr token expire
@@ -683,7 +683,7 @@ class TelegramClient(telethon.TelegramClient, BaseObject):
                     )
 
                     # successful log in
-                    newClient._on_login(result.user)  # type: ignore
+                    await newClient._on_login(result.user)  # type: ignore
                     break
 
                 except PasswordHashInvalidError as e:
